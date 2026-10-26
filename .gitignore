@@ -1,0 +1,19 @@
+# Personal data and secrets: never commit
+data/
+.env
+*.env
+jobs.json
+cv*.md
+*.pdf
+applications/
+hakemukset/
+report*.html
+raportti.html
+rejected.json
+
+# Python
+__pycache__/
+*.pyc
+*.bak
+*.tmp
+.venv/

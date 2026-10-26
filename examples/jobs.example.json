@@ -1,0 +1,42 @@
+[
+  {
+    "id": "0000000000000001",
+    "li_id": "1000000001",
+    "title": "Data Engineer",
+    "company": "Example Oy",
+    "location": "Helsinki, Finland",
+    "url": "https://www.linkedin.com/jobs/view/1000000001",
+    "source": "linkedin",
+    "published": "2026-01-01",
+    "status": "analyzed",
+    "score": 82,
+    "reason": "Strong Python and pipeline experience",
+    "description": "Fictional example posting."
+  },
+  {
+    "id": "0000000000000002",
+    "li_id": "1000000002",
+    "title": "ML Engineer (remote)",
+    "company": "Sample Ltd",
+    "location": "Remote, Finland",
+    "url": "https://www.linkedin.com/jobs/view/1000000002",
+    "source": "linkedin",
+    "published": "2026-01-01",
+    "status": "analyzed",
+    "score": 68,
+    "reason": "Good fit, limited MLOps experience",
+    "description": "Fictional example posting."
+  },
+  {
+    "id": "0000000000000003",
+    "li_id": "1000000003",
+    "title": "Business Analyst",
+    "company": "Demo Group",
+    "location": "Finland",
+    "url": "https://www.linkedin.com/jobs/view/1000000003",
+    "source": "linkedin",
+    "published": "2026-01-01",
+    "status": "new",
+    "description": ""
+  }
+]
