@@ -2,7 +2,25 @@
 
 A small, dependency-free Python pipeline that finds job postings, scores them against your profile with an LLM, and drafts tailored applications for the good matches. Sending applications stays manual on purpose.
 
+![Example report](docs/report-example.png)
+
+*Example report generated from the fictional data in `examples/jobs.example.json`.*
+
 ## How it works
+
+```mermaid
+flowchart LR
+    A[LinkedIn guest jobs API] --> B[scout.py<br/>fetch, dedupe, filter,<br/>closed-posting check]
+    B --> C[(data/jobs.json)]
+    C --> D[analyst.py<br/>LLM score 0-100]
+    D --> C
+    C --> E[report.html]
+    E <--> F[serve.py<br/>reject checkboxes]
+    C --> G[writer.py<br/>manual run]
+    H[data/cv.md + profile.json] --> D
+    H --> G
+    G --> I[data/applications/*.md<br/>review, then send yourself]
+```
 
 | Step | Script | What it does |
 |------|--------|--------------|

@@ -4,6 +4,7 @@ data/
 *.env
 jobs.json
 cv*.md
+!examples/cv.example.md
 *.pdf
 applications/
 hakemukset/
